@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I Love You Message</title>
+    <!-- Link to External CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h5>!!Welcome to the Message Generator!!</h5><br> <br>
+        <label for="nameInput">Enter Your Name: </label>
+        <br><input type="text" id="nameInput" placeholder="Your name">
+        <br><br>
+        <button onclick="showMessage()">Show My Message</button>
+    </div>
+
+    <script>
+        function showMessage() {
+            var name = document.getElementById("nameInput").value.trim(); // Trim any extra spaces
+
+            if (name === "") {
+                alert("Please enter your name to proceed.");
+            } else {
+                var loveMessages = [
+                    "!!!I Love You, " + name + " 💖!!!",
+
+                    "You're the peanut butter to my jelly, " + name + " 🥰"
+                ];
+
+                var quotes = [
+                    "We loved with a love that was more than love.",
+                    "To love and be loved is to feel the sun from both sides."
+                ];
+
+                // Randomly pick a love message and a quote from the arrays
+                var loveMessage = loveMessages[Math.floor(Math.random() * loveMessages.length)];
+                var quote = quotes[Math.floor(Math.random() * quotes.length)];
+
+                // Show the message in an alert box
+                alert(loveMessage + "\n\n" + "Here's a quote for you: \n" + quote);
+            }
+        }
+    </script>
+
+</body>
+</html>

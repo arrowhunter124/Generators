@@ -1,0 +1,96 @@
+/* Basic reset for consistency */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ec0af0; /* Soft light gray background */
+    color: #444; /* Darker text for readability */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Container for the form */
+.container {
+    background-color: rgb(244, 243, 245);
+    padding: 40px;
+    border-radius: 12px; /* Rounded corners for a softer look */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1); /* Larger shadow for depth */
+    text-align: center;
+    width: 350px; /* Slightly wider container */
+    max-width: 90%;
+}
+
+/* Heading */
+h1 {
+    font-size: 26px;
+    color: #3a3a3a; /* Darker color for a more professional look */
+    margin-bottom: 20px;
+}
+
+/* Instructions paragraph */
+p {
+    font-size: 16px;
+    color: #666; /* Lighter gray for subtle instructions */
+    margin-bottom: 25px;
+    line-height: 1.5;
+}
+
+/* Input field styling */
+input {
+    width: 100%;
+    padding: 14px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 8px; /* Rounded corners */
+    margin-bottom: 20px;
+    background-color: #fafafa; /* Light background for input fields */
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+input:focus {
+    border-color: #eb42fa; /* Subtle purple border when focused */
+    background-color: #f0f0ff; /* Light purple background when focused */
+    outline: none;
+}
+
+/* Button styling */
+button {
+    width: 100%;
+    padding: 14px;
+    background-color: #c90af4; /* Soft purple */
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px; /* Rounded button */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #5a50d0; /* Darker purple on hover */
+}
+
+/* Small adjustments for mobile responsiveness */
+@media (max-width: 400px) {
+    .container {
+        padding: 20px;
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    input, button {
+        font-size: 14px;
+    }
+}
